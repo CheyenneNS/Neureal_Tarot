@@ -9,7 +9,6 @@ setup(
     author_email="cnelsonn@picarro.com",
     install_requires=[
         "jinja2>=3.1",
-        "sqlalchemy>=2.0",
         "fastapi>=0.92",
         "uvicorn[standard]>=0.20",
     ],
