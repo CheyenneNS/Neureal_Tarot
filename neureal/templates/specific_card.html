@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="row">	
+	<div class="col-md-12">
+	    <h3>{{ name }}</h3>
+	    <img src="/static/{{ image }}" style="width: 60%;"/>
+        <h3><strong>interpretation:</strong> {{ message }}</h3>
+		<p><a href="{{ previous }}">previous card</a> || <a href="{{ next }}">next card</a></p>
+	</div>
+</div>
+{% endblock %}
