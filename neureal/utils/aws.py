@@ -12,7 +12,7 @@ def get_bucket_images():
 
     for object in response['Contents']:
         object_key = object['Key']
-        if object_key.lower().endswith(('.png', '.jpg', '.jpeg', '.bmp', '.gif')):
+        if object_key.lower().endswith(('.png', '.jpg', '.jpeg', '.bmp', '.gif', 'ico')):
             response = s3.get_object(Bucket=bucket_name, Key=object_key)
             file_name = os.path.join('static/images', object_key)
             os.makedirs(os.path.dirname(file_name), exist_ok=True)

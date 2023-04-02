@@ -11,6 +11,7 @@ setup(
         "jinja2>=3.1",
         "fastapi>=0.92",
         "uvicorn[standard]>=0.20",
+        "boto3>=1.26.1"
     ],
     python_requires=">=3.7",
 )
