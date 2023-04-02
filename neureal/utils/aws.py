@@ -1,8 +1,7 @@
 import boto3
 import os
 
-s3 = boto3.client('s3', aws_access_key_id='<id_key>',
-                  aws_secret_access_key='<aws_key>')
+s3 = boto3.client('s3')
 
 bucket_name = 'neureal'
 prefix = 'images/' # The prefix for the images, e.g. 'images/'
