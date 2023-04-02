@@ -1,1 +1,1 @@
-web: uvicorn.run(app)
+web: uvicorn main:app
